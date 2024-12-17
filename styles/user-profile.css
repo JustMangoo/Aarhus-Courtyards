@@ -1,0 +1,124 @@
+main {
+  display: flex;
+  padding: 20px 16px 48px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  background-color: var(--Lightest);
+}
+
+main header {
+  padding: 0;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+main header .username-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+main header .username-container h1 {
+  font-weight: 600;
+}
+
+main .achievement-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+main .achievement-card {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: var(--Primary, #4cbd6e);
+}
+
+main .achievement-card img {
+  width: 32px;
+  height: 32px;
+}
+
+main .achievement-card .count {
+  color: var(--Lightest, #f7f9f7);
+  font-family: "Kulim Park";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main .achievement-card .label {
+  color: var(--Darkest);
+  font-family: "Kulim Park";
+  background-color: var(--Primary50);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 400;
+}
+
+main .aboutme-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+main .section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main .top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+main .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
+  width: 100%;
+}
+
+main .card {
+  padding: 4px;
+  border-radius: 20px;
+}
+
+main .card .container {
+  gap: 6px;
+  padding: 4px;
+  border-radius: 16px;
+}
+
+main .card .container p {
+  color: var(--Darkest);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main .card .container .button {
+  height: 36px;
+  padding: 0px 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
