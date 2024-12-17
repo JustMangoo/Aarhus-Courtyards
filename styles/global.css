@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  --Darkest: #0f1210;
+  --Darkest75: #0e110fbf;
+  --Darkest25: #0f121040;
+  --Lightest: #f7f9f7;
+  --Primary: #4cbd6e;
+  --Primary75: #77cc90;
+  --Primary50: #a1dbb2;
+}
+
+* {
+  font-family: "Kulim Park", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: var(--Darkest);
+  font-weight: 400;
+  list-style: none;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--Primary50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------- Elements ---------*/
+
+h1 {
+  color: var(--Darkest);
+  font-family: "Kulim Park";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+h2 {
+  color: var(--Darkest);
+  font-family: "Kulim Park";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: var(--Darkest);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.button {
+  display: flex;
+  background-color: var(--Primary);
+  border-radius: 12px;
+  padding: 8px 32px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  color: var(--Lightest);
+}
+
+.button:hover {
+  background-color: var(--Primary75);
+  color: var(--Darkest75);
+}
+
+.button.light {
+  background-color: var(--Lightest);
+  color: var(--Darkest);
+}
+
+.button.light:hover {
+  background-color: #eaeaea;
+}
+
+.card {
+  aspect-ratio: 25/26;
+  background-color: var(--Primary50);
+  display: flex;
+  padding: 16px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.75) 100%
+    ),
+    url(<path-to-image>) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.card .container {
+  display: flex;
+  padding: 6px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--Lightest);
+}
+
+.card p {
+  color: var(--Darkest);
+  font-family: "Kulim Park";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.card .button {
+  align-self: stretch;
+}
+
+/*--------- Header ---------*/
+
+header {
+  display: flex;
+  width: 100%;
+  height: 59px;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+header .blob-left {
+  width: 139px;
+  height: 95px;
+  position: absolute;
+  left: -62px;
+  bottom: -30px;
+  z-index: -1;
+}
+
+header .blob-right {
+  width: 121.577px;
+  height: 93.274px;
+  position: absolute;
+  right: -50px;
+  top: -35px;
+  z-index: -1;
+}
+
+header .logo {
+  width: 74px;
+  height: 27px;
+  flex-shrink: 0;
+}
+
+header .language {
+  display: flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+  background: var(--Lightest);
+
+  font-style: normal;
+  line-height: normal;
+}
+
+header .language p {
+  font-size: 12px;
+  transform: translateY(1px);
+}
+
+header .language span {
+  font-size: 12px;
+  color: var(--Primary50);
+}
+
+header .language .active {
+  color: var(--Primary);
+  font-weight: 700;
+}
+
+/*--------- Footer ---------*/
+
+footer {
+  display: flex;
+  align-self: stretch;
+  padding: 24px 16px 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+footer .blob-left {
+  transform: rotate(-90deg);
+  width: 139px;
+  height: 95px;
+  position: absolute;
+  left: -72px;
+  top: -20px;
+  z-index: -1;
+}
+
+footer .blob-right {
+  transform: rotate(60deg);
+  width: 121.577px;
+  height: 93.274px;
+  position: absolute;
+  right: -55px;
+  bottom: -20px;
+  z-index: -1;
+}
+
+footer .button {
+  align-self: stretch;
+}
+
+footer .socials {
+  display: flex;
+  padding: 8px 10px 0px 10px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+footer .socials li {
+  display: flex;
+  width: 27px;
+  height: 27px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--Lightest, #f7f9f7);
+}
+
+footer .divider {
+  background-color: var(--Primary);
+  height: 1px;
+  align-self: stretch;
+  border-radius: 12px;
+}
+
+footer .footer-links {
+  display: flex;
+  padding: 12px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+footer .links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+footer .links-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+footer .links-container li {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Darkest75);
+}
+
+footer .links-container li a {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  color: var(--Darkest75);
+}
+
+footer .copyright {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  font-size: 12px;
+  font-weight: 700;
+}

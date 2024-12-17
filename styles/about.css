@@ -1,0 +1,96 @@
+main {
+  background-color: var(--Lightest);
+  display: flex;
+  padding: 20px 16px 48px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+section {
+  width: 100%;
+}
+
+main .contact-section {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 20px;
+}
+
+main .contact-card {
+  display: flex;
+  padding: 10px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--Primary, #4cbd6e);
+}
+
+main .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+main .card-header .title {
+  color: var(--Lightest, #f7f9f7);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main .contact-card .description {
+  color: var(--Lightest, #f7f9f7);
+  font-weight: 600;
+}
+
+main .contact-card .link {
+  color: var(--Lightest, #f7f9f7);
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-section details {
+  background-color: var(--Primary50);
+  color: var(--Lightest);
+  border-radius: 12px;
+  transition: 0.5s ease-in-out;
+}
+
+.faq-section summary {
+  padding: 16px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: height 1s ease;
+}
+
+.faq-section summary:after {
+  content: "+";
+  font-size: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.faq-section details[open] summary:after {
+  transform: rotate(-45deg);
+}
+
+.faq-section details[open] .faq-answer {
+  padding: 16px;
+  background-color: var(--Primary75);
+  border-radius: 12px;
+}
