@@ -15,8 +15,21 @@ main .hero {
 
 @media only screen and (min-width: 900px) {
   main .hero {
-    height: 416px;
+    height: 816px;
     padding: 28px 88px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  main .hero .arch-element {
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  main .hero .button {
+    font-size: 32px;
   }
 }
 
