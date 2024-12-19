@@ -22,18 +22,18 @@ async function initMap() {
   // Define marker data (coordinates, titles, and URLs)
   const marker1 = {
     position: { lat: 56.1540889, lng: 10.2067001 },
-    title: "Courtyard A",
-    url: "courtyard1.html",
+    title: "cafe mellemfolk",
+    url: "courtyards/cafe-mellemfolk.html",
   };
   const marker2 = {
     position: { lat: 56.1600456, lng: 10.2099313 },
-    title: "Courtyard B",
-    url: "courtyard1.html",
+    title: "irma pedersens gade",
+    url: "courtyards/irma-pedersens-gade.html",
   };
   const marker3 = {
     position: { lat: 56.1638095, lng: 10.2260133 },
-    title: "Courtyard C",
-    url: "courtyard1.html",
+    title: "villa provence hotel",
+    url: "courtyards/villa-provence-hotel.html",
   };
 
   // Create markers from the data
