@@ -1,0 +1,265 @@
+main {
+  display: flex;
+  padding: 20px 0px 48px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  background-color: var(--Lightest);
+}
+
+@media only screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+main header {
+  display: flex;
+  padding: 0px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  justify-content: start;
+  height: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  main header {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+main .gallery-section {
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (min-width: 900px) {
+  main .gallery-section {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+}
+
+main .gallery-section .carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+main .gallery-section .carousel-item {
+  width: 100%;
+  flex-shrink: 0;
+  height: 222px;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  padding: 0 4px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 900px) {
+  main .gallery-section .carousel-item {
+    height: 600px;
+  }
+}
+
+main .gallery-section .carousel-item img {
+  object-fit: cover;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+main .gallery-section .carousel-control {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  bottom: 30px;
+  justify-content: space-between;
+}
+
+main .gallery-section .carousel-control img {
+  aspect-ratio: 1/1;
+  height: 40px;
+  cursor: pointer;
+}
+
+main .gallery-section .carousel-navigation {
+  display: flex;
+  padding: 4px 2px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+main .gallery-section .nav-section {
+  height: 8px;
+  flex: 1 0 0;
+  border-radius: 50px;
+  background: var(--Primary50);
+}
+
+main .gallery-section .nav-section.active {
+  height: 10px;
+  background: var(--Primary, #4cbd6e);
+}
+
+main .description-section {
+  display: flex;
+  padding: 10px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+@media only screen and (min-width: 900px) {
+  main .description-section {
+    padding: 10px 88px;
+    grid-area: 3 / 1 / 4 / 3;
+  }
+}
+
+main .description-section .address-container {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+main .address-container .address {
+  text-decoration: underline;
+}
+
+main .address-container .button {
+  align-self: stretch;
+}
+
+main .amenities-section {
+  margin-top: 32px;
+  display: flex;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+@media only screen and (min-width: 900px) {
+  main .amenities-section {
+    padding: 10px 88px;
+    grid-area: 4 / 1 / 5 / 2;
+  }
+}
+
+main .amenities-section .amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
+  width: 100%;
+}
+
+main .amenities-section .amenities-item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  gap: 4px;
+}
+
+main .amenities-section .amenities-item p {
+  color: var(--Darkest);
+  text-align: center;
+  font-family: "Kulim Park";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+main .amenities-section .amenities-item img {
+  display: flex;
+  width: 44px;
+  aspect-ratio: 1/1;
+  padding: 6px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--Primary);
+}
+
+main .reviews-section {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  padding: 0 16px;
+}
+
+@media only screen and (min-width: 900px) {
+  main .reviews-section {
+    padding: 0px 88px;
+    grid-area: 4 / 2 / 5 / 3;
+  }
+}
+
+main .reviews-section .review-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+main .reviews-section .review {
+  display: flex;
+  width: 100%;
+
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--Primary50, #a1dbb2);
+}
+
+main .reviews-section .review-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main .reviews-section .reviewer {
+  font-weight: 600;
+}
+
+main .reviews-section .rating-container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+main .reviews-section .review-text {
+  font-size: 14px;
+}

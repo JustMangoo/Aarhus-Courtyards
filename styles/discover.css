@@ -16,6 +16,12 @@ main {
   align-self: stretch;
 }
 
+@media only screen and (min-width: 900px) {
+  .filter-bar {
+    padding: 0px 88px;
+  }
+}
+
 .filter-bar img {
   display: flex;
   padding: 4px;
@@ -36,6 +42,12 @@ main {
   border-radius: 50px;
   background: var(--Primary50);
   margin: 0 16px;
+}
+
+@media only screen and (min-width: 900px) {
+  .view-switch {
+    margin: 0 88px;
+  }
 }
 
 .view-switch .option {
@@ -65,6 +77,14 @@ main {
   column-gap: 8px;
   row-gap: 16px;
   width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  #grid-view {
+    padding: 0 88px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
 }
 
 #grid-view .card {
@@ -110,4 +130,10 @@ main {
 #map-view #map {
   height: 348px;
   width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  #map-view #map {
+    height: 800px;
+  }
 }
